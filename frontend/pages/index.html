@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valquiria & Marco | Renovação de Vínculo 2 de Maio 2026</title>
+    <meta name="description" content="Você está convidado para a renovação de vínculo de Valquiria & Marco. 2 de Maio de 2026. Confirme sua presença.">
+    <!-- SEO & Meta Tags -->
+    <meta name="theme-color" content="#d4af37">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+    
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    
+    <div class="bg-stage" aria-hidden="true">
+        <div class="bg-layer layer-bottom" style="background-image: url('../assets/celebracao-dos-casamentos-2019.jpg');"></div>
+        <div class="bg-layer layer-top" style="background-image: url('../assets/WhatsApp Image 2026-01-26 at 12.34.06.jpeg'); background-position: center 20%; background-size: cover;"></div>
+        <div id="three-canvas-container"></div>
+        <div class="overlay"></div>
+    </div>
+
+    <main>
+        <section class="section-hero" aria-label="Convite de casamento">
+            <div class="hero-content">
+                <p class="intro fade-anim">Convite para a renovação de vínculo de</p>
+                <h1 class="title fade-anim">Valquiria <span class="amp">&amp;</span> Marco</h1>
+                <div class="date-box fade-anim" aria-label="Data: 25 de Outubro de 2026">
+                    <span>02</span>
+                    <span class="divider">MAI</span>
+                    <span>2026</span>
+                </div>
+            </div>
+            <div class="scroll-icon fade-anim" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+                <span>Role para ver</span>
+            </div>
+        </section>
+
+        <section class="section-cards" aria-label="Detalhes do evento">
+            <div class="container">
+                <article class="glass-card tilt-effect fade-anim">
+                    <div class="shimmer"></div>
+                    <div class="icon">
+                        <img src="../assets/alianca-de-ouro-01-capa-removebg-preview.png" alt="Alianças douradas" class="custom-icon" loading="lazy" width="56" height="56">
+                    </div>
+                    <h3>Cerimônia</h3>
+                    <p class="info">Catedral da Sé</p>
+                    <p class="time">Às 16:00 horas</p>
+                    <a href="#" class="map-link" aria-label="Ver localização da cerimônia no mapa">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </article>
+
+                <article class="glass-card tilt-effect fade-anim delay">
+                    <div class="shimmer"></div>
+                    <div class="icon">
+                        <img src="../assets/10696723-m-removebg-preview.png" alt="Taça de brinde" class="custom-icon" loading="lazy" width="56" height="56">
+                    </div>
+                    <h3>Recepção</h3>
+                    <p class="info">Espaço Villa Vérico</p>
+                    <p class="time">Às 19:00 horas</p>
+                    <a href="#" class="map-link" aria-label="Ver localização da recepção no mapa">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 6px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Ver no Mapa
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-rsvp" aria-label="Confirmar presença">
+            <div class="rsvp-container fade-anim">
+                <div id="formContent">
+                    <h2>Confirme sua Presença</h2>
+                    <p class="rsvp-subtitle">Sua presença torna nosso dia completo.</p>
+                    
+                    <form id="rsvpForm" novalidate>
+                        <div class="input-wrapper">
+                            <input type="text" id="name" required placeholder=" " autocomplete="name" maxlength="200" aria-label="Nome dos convidados adultos">
+                            <label for="name">Nome dos convidados (Adultos)</label>
+                            <span class="error-msg" role="alert">Por favor, preencha o nome.</span>
+                        </div>
+
+                        <div class="input-wrapper custom-dropdown-area">
+                            <input type="hidden" id="guests" required>
+                            <div class="custom-select-trigger" tabindex="0" role="combobox" aria-expanded="false" aria-label="Total de adultos">
+                                <span class="selected-value">Total de Adultos</span>
+                                <span class="arrow"></span>
+                            </div>
+                            <div class="custom-options" role="listbox">
+                                <div class="option" data-value="1" role="option">1 Pessoa</div>
+                                <div class="option" data-value="2" role="option">2 Pessoas</div>
+                                <div class="option" data-value="3" role="option">3 Pessoas</div>
+                                <div class="option" data-value="4" role="option">4 Pessoas</div>
+                            </div>
+                            <span class="error-msg" role="alert">Selecione uma opção.</span>
+                        </div>
+
+                        <div class="children-section">
+                            <div class="toggle-row">
+                                <div class="checkbox-wrapper-12">
+                                    <div class="cbx">
+                                        <input id="cbx-12" type="checkbox" aria-label="Levará crianças?">
+                                        <label for="cbx-12"></label>
+                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                        </svg>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; width: 0; height: 0;">
+                                        <defs>
+                                            <filter id="goo-12">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                                <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span class="toggle-label">Levará crianças?</span>
+                            </div>
+
+                            <div id="childrenFields" class="hidden-fields">
+                                <div class="input-wrapper custom-dropdown-area" id="childQtyWrapper">
+                                    <input type="hidden" id="childrenQty">
+                                    <div class="custom-select-trigger" tabindex="0" role="combobox" aria-expanded="false" aria-label="Quantidade de crianças">
+                                        <span class="selected-value">Quantas crianças?</span>
+                                        <span class="arrow"></span>
+                                    </div>
+                                    <div class="custom-options" role="listbox">
+                                        <div class="option" data-value="1" role="option">1 Criança</div>
+                                        <div class="option" data-value="2" role="option">2 Crianças</div>
+                                        <div class="option" data-value="3" role="option">3 Crianças</div>
+                                        <div class="option" data-value="4+" role="option">4 ou mais</div>
+                                    </div>
+                                    <span class="error-msg" role="alert">Informe a quantidade.</span>
+                                </div>
+
+                                <div class="input-wrapper">
+                                    <textarea id="childrenDetails" rows="2" placeholder=" " maxlength="500" aria-label="Nomes e idades das crianças"></textarea>
+                                    <label for="childrenDetails">Nomes e Idades das crianças</label>
+                                    <span class="error-msg" role="alert">Por favor, liste os nomes e idades.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-container">
+                            <button class="Btn" type="submit" aria-label="Confirmar presença">
+                                <span class="btn-text">CONFIRMAR</span>
+                                <span class="btn-loader" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="successMessage" class="hidden" role="status" aria-live="polite">
+                    <div class="checkmark-wrapper">
+                        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                        </svg>
+                    </div>
+                    <h3>Presença Confirmada!</h3>
+                    <p>Estamos ansiosos para celebrar com você!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-ornament" aria-hidden="true">
+                <svg width="120" height="20" viewBox="0 0 120 20" fill="none">
+                    <path d="M0 10 Q30 0 60 10 Q90 20 120 10" stroke="rgba(212,175,55,0.3)" stroke-width="1" fill="none"/>
+                </svg>
+            </div>
+            <p>Valquiria & Marco</p>
+            <p class="footer-date">02 de Maio de 2026</p>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+</body>
+</html>
