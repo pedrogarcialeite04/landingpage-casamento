@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const API_URL = '/api/rsvp';
+  const API_BASE_URL = (window.API_BASE_URL || '').replace(/\/+$/, '');
+  const API_URL = `${API_BASE_URL}/api/rsvp`;
 
   // =========================================================
   // 1. THREE.JS - PARTÍCULAS DOURADAS 3D
